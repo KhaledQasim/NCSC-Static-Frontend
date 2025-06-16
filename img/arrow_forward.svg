@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Bounding_box" data-name="Bounding box" d="M0,0H35V35H0Z" fill="#fff" style="isolation: isolate"/>
+    </clipPath>
+  </defs>
+  <g id="arrow_forward" transform="translate(35 35) rotate(180)" clip-path="url(#clip-path)" style="isolation: isolate">
+    <path id="arrow_forward-2" data-name="arrow_forward" d="M0,13.125V10.208H17.755L9.589,2.042,11.667,0,23.333,11.667,11.667,23.333,9.589,21.292l8.167-8.167Z" transform="translate(5.833 5.833)" fill="#fff" style="isolation: isolate"/>
+  </g>
+</svg>

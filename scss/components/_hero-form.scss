@@ -1,0 +1,80 @@
+@use "sass:color";
+@use '../variables' as *;
+
+.form-box {
+  background-color: rgba($color-white, 0.19);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  text-align: center;
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.form-control {
+  background-color: rgba($base-dark-gray, 0.3);
+  border: 1px solid color.scale($color-white, $lightness: -40.8%);
+  color: $color-white;
+  width: 47%;
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 13px;
+  text-align: right;
+
+  &::placeholder {
+    color: color.scale($color-white, $lightness: -33.3%);
+  }
+}
+
+.nav-tabs {
+
+    gap: 4px;
+    border: none;
+
+    .nav-link {
+        background-color: color.scale($color-black, $lightness: 20%);
+        color: $color-white;
+        width: 100%;
+        border: 1px solid;
+    }
+
+    .nav-item {
+        width: 47%;
+    }
+
+    .tab-right {
+        border-radius: 0px 100px 100px 0px !important;
+    }
+
+    .tab-left {
+        border-radius: 100px 0px 0px 100px !important;
+    }
+
+    .nav-link.active {
+        background: linear-gradient(to bottom, $color-accent-purple, $color-secondary);
+        color: $color-white;
+    }
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 16px;
+}
+
+.icon {
+  opacity: 0.5;
+  padding: 0px 26px;
+
+  &.borderLeft {
+    border-left: 1px solid color.adjust($color-primary,$hue:  -7.1deg,$lightness: 5.3%  );
+  }
+
+  img {
+    width: 24px;
+  }
+}

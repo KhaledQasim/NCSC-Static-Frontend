@@ -1,0 +1,88 @@
+@use "sass:color";
+@use '../variables' as *;
+
+.bg-gray {
+  background: color.scale($color-white, $lightness: -15.7%) !important; // Utility background color
+  border-radius: 20px;
+  max-height: 295px; // Specific max-height for this utility class
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+
+// News Images Section
+.NewsImgs {
+  .item {
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px; // Added consistent border-radius
+    }
+  }
+}
+
+
+.events-section {
+  padding: 40px 0; // Standard padding for the section
+  background-color: color.scale($color-white, $lightness: -6.3%); // Dynamic background color
+
+  // Individual Event Box Styling
+  .event-box {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $color-white; // Consistent border using variable
+    position: relative;
+    display: flex; // Align content and image
+    justify-content: space-between; // Space content and image apart
+    align-items: center; // Vertically center content
+
+    p {
+      position: relative;
+      margin-bottom: 0; // Remove default paragraph margin for tighter spacing
+
+      &::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: color.adjust($color-primary, $hue: 7.5deg, $lightness: -20%); // Dynamically adjusted color for the bullet point
+        position: absolute;
+        top: 10px;
+        right: -15px; // Positioning for RTL bullet point
+        border-radius: 50%;
+      }
+    }
+
+    img {
+      width: 25px; // Fixed width for the event icon
+    }
+  }
+
+  // Scrollable Events List Container
+  .events-box {
+    background: color.scale($color-white, $lightness: -6.7%); // Dynamic background for the list
+    border-radius: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 1rem;
+
+    // Scrollbar Thumb Styling for Webkit browsers
+    &::-webkit-scrollbar {
+      width: 8px; // Width of the scrollbar
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $color-primary; // Scrollbar thumb color from variable
+      border-radius: 4px;
+    }
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+  .events-section .col-md-4,
+  .events-section .col-md-8 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>بلاغ إلكتروني</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
+  <!-- font-awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
+
+  <!-- Owl Carousel CSS -->
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+
+  <!-- styles CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <!-- Right: Logo -->
+      <a class="navbar-brand text-white me-auto order-lg-1" href="#">
+        <img src="img/logo.svg" alt="Logo" style="height: 40px;">
+      </a>
+
+      <!-- Center: Nav Links -->
+      <div class="collapse navbar-collapse justify-content-center order-2" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active"><a class="nav-link" href="#">الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">برامج الأمن السيبراني </a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              نبذة عنا
+            </a>
+            <ul class="dropdown-menu text-end">
+              <li><a class="dropdown-item" href="#">برنامج 1</a></li>
+              <li><a class="dropdown-item" href="#">برنامج 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">النظم و اللوائح</a></li>
+        </ul>
+      </div>
+
+      <!-- Left: Contact Us Button -->
+      <div class=" order-lg-3">
+        <a href="#contact" class="btn btn-gradient2 d-flex align-items-center">
+          <img src="img/contact.svg" />
+          تواصل معنا
+        </a>
+      </div>
+      <div class="order-lg-3">
+        <a href="#" class="btn btn-bg-white d-flex align-items-center">
+          EN
+        </a>
+      </div>
+
+      <!-- Toggle button -->
+      <button class="navbar-toggler order-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Carousel Section -->
+        <div class="col-lg-6">
+          <div class="owl-carousel owl-theme carousel-content">
+            <div class="item">
+              <h2>
+                ما المقصود بالأمن السيبراني؟ و ما أهمية الأمن السيبراني في مجتمعنا المعاصر؟
+              </h2>
+              <p>هو علم حماية الأجهزة والمعلومات من الهجمات الإلكترونية المتزايدة.</p>
+              <a href="#" class="btn btn-gradient2"> إقراء المزيد
+                <img src="img/arrow_forward.svg" width="20" />
+              </a>
+            </div>
+            <div class="item">
+              <h2>
+                ما المقصود بالأمن السيبراني؟ و ما أهمية الأمن السيبراني في مجتمعنا المعاصر؟
+              </h2>
+              <p>حماية بيانات المؤسسات والأفراد من التهديدات الرقمية أمر حيوي اليوم.</p>
+              <a href="#" class="btn btn-gradient2"> إقراء المزيد
+                <img src="img/arrow_forward.svg" width="20" />
+              </a>
+            </div>
+            <div class="item">
+              <h2>كن جزءاً من الحل</h2>
+              <p>ساهم معنا في حماية مجتمعنا من خلال الإبلاغ عن الحوادث أو الثغرات.</p>
+              <a href="#" class="btn btn-gradient2"> إقراء المزيد
+                <img src="img/arrow_forward.svg" width="20" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Form Section -->
+        <div class="col-lg-6 mb-4">
+          <div class="form-box">
+            <h4>اريد ان ابلغ عن</h4>
+            <ul class="nav nav-tabs justify-content-center mb-4" id="reportTabs" role="tablist">
+              <li class="nav-item">
+                <button class="nav-link active tab-right" id="incident-tab" data-bs-toggle="tab"
+                  data-bs-target="#incident" type="button">عن حادث</button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link tab-left" id="vuln-tab" data-bs-toggle="tab" data-bs-target="#vuln"
+                  type="button">ثغرة
+                  أمنية</button>
+              </li>
+            </ul>
+            <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+              لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+            </p>
+            <div class="icons">
+              <div class="icon borderLeft">
+                <img src="img/Building - 24.svg" />
+                <span> مؤسسات حكومية</span>
+              </div>
+              <div class="icon">
+                <img src="img/Building - 39.svg" />
+                <span> شركات خاصة</span>
+              </div>
+            </div>
+            <div class="tab-content" id="reportTabsContent">
+              <!-- Incident -->
+              <div class="tab-pane fade show active" id="incident">
+
+                <input type="text" class="form-control mb-2" placeholder="اسم الجهة الرسمية" />
+                <input type="text" class="form-control mb-2" placeholder="اسم المستخدم" />
+                <input type="text" class="form-control mb-2" placeholder=" المسمى الوظيفيي" />
+                <input type="text" class="form-control mb-2" placeholder="رقم الهاتف" />
+                <input type="email" class="form-control mb-2" placeholder="البريد الإلكتروني" />
+                <input type="password" class="form-control mb-3" placeholder="كلمة المرور" />
+                <button class="btn btn-bg-black">تقديم بلاغ</button>
+
+              </div>
+              <!-- Vulnerability -->
+              <div class="tab-pane fade" id="vuln">
+                <form>
+                  <input type="text" class="form-control mb-2" placeholder="المسمى الوظيفي" />
+                  <input type="text" class="form-control mb-2" placeholder="اسم الجهة" />
+                  <input type="text" class="form-control mb-2" placeholder="رقم الهاتف" />
+                  <input type="email" class="form-control mb-2" placeholder="البريد الإلكتروني" />
+                  <textarea class="form-control mb-3 w-100" placeholder="وصف الثغرة الأمنية"></textarea>
+                  <button class="btn btn-bg-black">تقديم بلاغ</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cards Section -->
+  <div class="container CardsSection py-5">
+    <div class="section-title">
+      <h5>أحدث التنبيهات والتحذيرات</h5>
+      <h3>تابع آخر الأخبار السيبرانية لحماية بياناتك</h3>
+    </div>
+
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="alert-card position-relative">
+          <!-- <div class="alert-icon">
+            <img src="img/Group 310.jpg" />
+          </div> -->
+          <div>
+            <div class="card-header">
+              <img src="img/Group 310.jpg" />
+              <div>
+                <h6 class="alert-title">CVE-2025-2FLG1</h6>
+                <p class="text-muted">تنبيه "ثغرة أمنية"</p>
+              </div>
+            </div>
+            <p class="alert-desc">
+              لوريم ايبسوم دولار سيت أميت، كونسيتتور أدايبا سكينج أليايت.
+            </p>
+            <div class="row alert-details">
+              <div class="col-6">
+                <strong>اسم الثغرة:</strong>
+                <span>VD34 - Clash</span>
+              </div>
+              <div class="col-6">
+                <strong>المنتج:</strong>
+                <span>NVIDIA Operating</span>
+              </div>
+              <div class="col-6">
+                <strong>التأثير والمعالجة:</strong>
+                <span>CPU / GPU Buffering</span>
+              </div>
+              <div class="col-6">
+                <strong>التوصيات:</strong>
+                <span>Update the software to NV-3824 V23.4</span>
+              </div>
+            </div>
+          </div>
+          <div class="alert-footer mt-3">
+            <a href="#" class="read-more">
+              اقرأ المزيد
+              <img src="img/arrow_forward.svg" />
+            </a>
+            <span class="download-icon">
+              <img src="img/Group 185.svg" />
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="alert-card position-relative">
+          <!-- <div class="alert-icon">
+            <img src="img/Group 309.jpg" />
+          </div> -->
+          <div>
+            <div class="card-header">
+              <img src="img/Group 309.jpg" />
+              <div>
+                <h6 class="alert-title">CVE-2025-2FLG1</h6>
+                <p class="text-muted">تنبيه "ثغرة أمنية"</p>
+              </div>
+            </div>
+            <p class="alert-desc">
+              لوريم ايبسوم دولار سيت أميت، كونسيتتور أدايبا سكينج أليايت.
+            </p>
+            <div class="row alert-details">
+              <div class="col-6">
+                <strong>اسم الثغرة:</strong>
+                <span>VD34 - Clash</span>
+              </div>
+              <div class="col-6">
+                <strong>المنتج:</strong>
+                <span>NVIDIA Operating</span>
+              </div>
+              <div class="col-6">
+                <strong>التأثير والمعالجة:</strong>
+                <span>CPU / GPU Buffering</span>
+              </div>
+              <div class="col-6">
+                <strong>التوصيات:</strong>
+                <span>Update the software to NV-3824 V23.4</span>
+              </div>
+            </div>
+          </div>
+          <div class="alert-footer mt-3">
+            <a href="#" class="read-more">
+              اقرأ المزيد
+              <img src="img/arrow_forward.svg" />
+            </a>
+            <span class="download-icon">
+              <img src="img/Group 185.svg" />
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="alert-card position-relative">
+          <!-- <div class="alert-icon icon-yellow">  <img src="img/Group 311.jpg" /></div> -->
+          <div>
+            <div class="card-header">
+              <img src="img/Group 311.jpg" />
+              <div>
+                <h6 class="alert-title">CVE-2025-2FLG1</h6>
+                <p class="text-muted">تنبيه "ثغرة أمنية"</p>
+              </div>
+            </div>
+            <p class="alert-desc">
+              لوريم ايبسوم دولار سيت أميت، كونسيتتور أدايبا سكينج أليايت.
+            </p>
+            <div class="row alert-details">
+              <div class="col-6">
+                <strong>اسم الثغرة:</strong>
+                <span>VD34 - Clash</span>
+              </div>
+              <div class="col-6">
+                <strong>المنتج:</strong>
+                <span>NVIDIA Operating</span>
+              </div>
+              <div class="col-6">
+                <strong>التأثير والمعالجة:</strong>
+                <span>CPU / GPU Buffering</span>
+              </div>
+              <div class="col-6">
+                <strong>التوصيات:</strong>
+                <span>Update the software to NV-3824 V23.4</span>
+              </div>
+            </div>
+          </div>
+          <div class="alert-footer mt-3">
+            <a href="#" class="read-more">
+              اقرأ المزيد
+              <img src="img/arrow_forward.svg" />
+            </a>
+            <span class="download-icon download-disabled">
+              <img src="img/Group 185.svg" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Chairman massage Section -->
+  <div class="massage-section py-5">
+    <div class="container">
+      <div class="row align-items-center ">
+        <!-- img Section -->
+        <div class="col-lg-4 mb-4">
+          <img src="img/Abeer.jpg" width="100%">
+        </div>
+        <!-- Carousel Section -->
+        <div class="col-lg-8">
+          <div class="owl-carousel owl-theme carousel-content">
+            <div class="item">
+              <h3 class="title2">كلمة رئيس المركز الوطني للأمن
+                السيبراني عبير أنور عبدالله العوضي
+              </h3>
+              <br>
+              <p>لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور لابوري
+                ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس
+                نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات .
+                ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+                نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا كيو
+                أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم</p>
+              <br>
+              <p>
+                لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور لابوري
+                ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس
+                نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات .
+                ديواس أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
+                نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا كيو
+                أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم
+              </p>
+              <!-- <a href="#" class="btn btn-gradient">اعرف المزيد</a> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- News Section -->
+  <div class="container py-5">
+    <!-- Header -->
+    <div class="section-title">
+      <h5> آخر الأخبار</h5>
+      <h3> برامج أمنية لحماية معلوماتك الشخصية</h3>
+    </div>
+
+    <!-- Grid Layout -->
+    <div class="row">
+
+      <!-- Right Column: Other News -->
+      <div class="col-lg-6">
+        <p class="color-cyan">أخبارنا المحلية</p>
+        <div class="news-box d-flex">
+          <img src="img/news5.jpg" class="img-fluid rounded me-3" style="width: 120px; height: 100px;" alt="خبر 1">
+          <div>
+            <p class="news-title mb-1">رئيس (الأمن السيبراني) يؤكد حرص الكويت على التنسيق الخليجي في الأمن السيبراني</p>
+          </div>
+        </div>
+
+        <div class="news-box d-flex">
+          <img src="img/news1.jpg" class="img-fluid rounded me-3" style="width: 120px; height: 100px;" alt="خبر 2">
+          <div>
+            <p class="news-title mb-1">دبي تحتضن اجتماع "البنك الدولي للحوسبة السحابية" قبل انطلاق المنتدى الحكومي</p>
+          </div>
+        </div>
+
+        <div class="news-box d-flex">
+          <img src="img/news3.jpg" class="img-fluid rounded me-3" style="width: 120px; height: 100px;" alt="خبر 3">
+          <div>
+            <p class="news-title mb-1">دبي.. رؤية طموحة لتعزيز الابتكار الرقمي والأمن السيبراني المحلي والعالمي</p>
+          </div>
+        </div>
+      </div>
+      <!-- Left Column: Main News -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+
+        <p class="color-cyan">أخبار عالمية</p>
+        <div class="owl-carousel owl-theme" id="mainNewsCarousel">
+          <!-- Slide 1 -->
+          <div class="">
+            <img src="img/news.jpg" class="img-fluid rounded mb-3" alt="Main News 1">
+            <p class="news-date">الخميس | 2025/11/03</p>
+            <h5 class="news-title">رئيس (الأمن السيبراني) يؤكد حرص دولة الكويت على التنسيق الخليجي المشترك في مجال الأمن
+            </h5>
+            <p class="news-subtitle mt-2">
+              أكد رئيس المركز الوطني للأمن السيبراني اللواء ركن متقاعد مهندس محمد بوحمد حرص دولة الكويت على تعزيز
+              التعاون والتنسيق الخليجي...
+            </p>
+            <a href="#" class="read-more">
+              اقرأ المزيد
+              <img src="img/arrow_forward.svg" />
+            </a>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="">
+            <img src="img/news.jpg" class="img-fluid rounded mb-3" alt="Main News 2">
+            <p class="news-date">الخميس | 2025/11/02</p>
+            <h5 class="news-title">الكويت تستضيف مؤتمر الأمن السيبراني الخليجي 2025</h5>
+            <p class="news-subtitle mt-2">
+              مؤتمر يجمع خبراء الأمن من دول الخليج لتعزيز الأمن السيبراني ومناقشة التحديات والفرص المستقبلية...
+            </p>
+            <a href="#" class="btn read-more mt-2">اقرأ المزيد
+              <img src="img/arrow_forward.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- events Section -->
+  <section class="events-section">
+    <div class="container">
+      <!-- Header -->
+      <div class="section-title">
+        <h5> الفعاليات و المناسبات</h5>
+        <h3> تصفح آخر الفعاليات و المناسبات</h3>
+      </div>
+      <div class="row">
+        <!-- Calendar -->
+        <div class="col-md-4">
+          <div class="calendar-box">
+            <div id="calendar" class="datepicker"></div>
+          </div>
+        </div>
+        <!-- Events List -->
+        <div class="col-md-8">
+          <div class="scroll-wrapper">
+            <div class="scroll-content bg-gray">
+              <div class="align-items-md-start d-flex event-box justify-content-around">
+                <p>دبي، الأمن الإلكتروني، يعلن عن استضافة بطولة "مدرسة الدفاع السيبراني" في دبي 2025</p>
+                <img src="img/Reports.svg" />
+              </div>
+              <div class="align-items-md-start d-flex event-box justify-content-around">
+                <p> دبي.. "رؤية طموحة وجهود دولية" لتعزيز الابتكار الرقمي، والأمن السيبراني، المحلي، والعالمي.</p>
+                <img src="img/Reports.svg" />
+              </div>
+              <div class="align-items-md-start d-flex event-box justify-content-around">
+                <p> دبي.. "رؤية طموحة وجهود دولية" لتعزيز الابتكار الرقمي، والأمن السيبراني، المحلي، والعالمي.</p>
+                <img src="img/Reports.svg" />
+              </div>
+
+            </div>
+          </div>
+          <div class="d-flex gap-3 mt-4 NewsImgs">
+            <!-- <div class="owl-carousel owl-theme" id="SubNewsCarousel"> -->
+              <div class="item"><img src="img/news1.jpg" alt="صورة 1" class="img-fluid rounded" width="100"></div>
+              <div class="item"> <img src="img/news5.jpg" alt="صورة 2" class="img-fluid rounded" width="100"></div>
+              <div class="item"><img src="img/news3.jpg" alt="صورة 3" class="img-fluid rounded" width="100"></div>
+        
+            <!-- </div> -->
+          </div>
+          <p class="text-primary mt-2">الخميس | 10/11/2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- survey Section -->
+  <div class="survey-section">
+    <div class="container">
+      <div class="section-title ">
+        <h3 class="white">أجب عن الإستبيان وشاركنا رأيك</h3>
+        <p>لوريم ايبسوم دولار سيت أميت، كونسيتتور أدايبا سكينج دو إي...</p>
+      </div>
+      <form id="surveyForm">
+        <div class="survey-question" data-question="q1">
+          <div class="d-flex justify-content-between">
+            <label class="form-label w-60 align-content-end">هل تستخدم كلمات مرور قوية وتطلب تغييرها بشكل دوري؟</label>
+            <div class="option-container">
+              <label><input type="radio" name="q1" value="نعم دائمًا"> نعم دائمًا</label>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width: 60%">60%</div>
+              </div>
+            </div>
+            <div class="option-container">
+              <label><input type="radio" name="q1" value="نعم أحياناً"> نعم أحياناً</label>
+              <div class="progress">
+                <div class="progress-bar bg-info" style="width: 30%">30%</div>
+              </div>
+            </div>
+            <div class="option-container">
+              <label><input type="radio" name="q1" value="لا أبدًا"> لا أبدًا</label>
+              <div class="progress">
+                <div class="progress-bar bg-danger" style="width: 10%">10%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="survey-question" data-question="q2">
+          <div class="d-flex justify-content-between">
+            <label class="form-label w-60 align-content-end">هل تقوم بتحديث كافة أنظمة التشغيل و التطبيقات و الأجهزة
+              ؟</label>
+            <div class="option-container">
+              <label><input type="radio" name="q2" value="نعم دائمًا"> نعم دائمًا</label>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width: 60%">60%</div>
+              </div>
+            </div>
+            <div class="option-container">
+              <label><input type="radio" name="q2" value="نعم أحياناً"> نعم أحياناً</label>
+              <div class="progress">
+                <div class="progress-bar bg-info" style="width: 30%">30%</div>
+              </div>
+            </div>
+            <div class="option-container">
+              <label><input type="radio" name="q2" value="لا أبدًا"> لا أبدًا</label>
+              <div class="progress">
+                <div class="progress-bar bg-danger" style="width: 10%">10%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="survey-question" data-question="q3">
+          <div class="d-flex justify-content-between">
+            <label class="form-label w-60 align-content-end"> هل قمت بتطبيق المصادقة الثنائية على الأنظمة الهامة
+              ؟</label>
+            <div class="option-container">
+              <label><input type="radio" name="q3" value="نعم دائمًا"> نعم </label>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width: 60%">60%</div>
+              </div>
+            </div>
+            <div class="option-container">
+              <label><input type="radio" name="q3" value="نعم أحياناً"> لا </label>
+              <div class="progress">
+                <div class="progress-bar bg-info" style="width: 30%">30%</div>
+              </div>
+            </div>
+            <div class="option-container">
+
+            </div>
+
+          </div>
+        </div>
+        <div class="survey-question" data-question="q4">
+          <div class="d-flex justify-content-between">
+            <label class="form-label w-60 align-content-end"> هل تقوم بإجراء عمليات نسخ اتياطية منتظمة للبيانات؟</label>
+            <div class="option-container">
+              <label><input type="radio" name="q4" value="نعم دائمًا"> نعم </label>
+              <div class="progress">
+                <div class="progress-bar bg-success" style="width: 60%">60%</div>
+              </div>
+            </div>
+            <div class="option-container">
+              <label><input type="radio" name="q4" value="نعم أحياناً"> لا </label>
+              <div class="progress">
+                <div class="progress-bar bg-info" style="width: 30%">30%</div>
+              </div>
+            </div>
+            <div class="option-container">
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- يمكن تكرار نفس البنية للأسئلة الأخرى مع نسب مبدئية مشابهة -->
+
+        <div class="text-center">
+          <button type="button" onclick="submitSurvey()" class="btn btn-confirm">تأكيد</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Social Section -->
+  <div class="container py-5">
+
+    <!-- Title Section -->
+    <div class="text-center mb-4 row align-items-center">
+      <div class="section-title col-md-6">
+        <h5> تابعونا و تواصلوا معنا</h5>
+        <h3> وسائل التواصل الإجتماعي</h3>
+        <p>لوريم إيبسوم دولار سيت أميت، كونسكتتور أديبا يسكينغ إليت، سيت دو أيوسيمود تيمبور لابوري.</p>
+
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="text-center social-icons mb-5 col-md-6">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook active"></i></a>
+        <a href="#"><i class="fas fa-times-circle"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fas fa-user-circle"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+
+    </div>
+    <!-- Social Posts Grid -->
+    <div class="row">
+      <!-- Post 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="social-post">
+          <img src="img/social.jpg" alt="post-1" />
+          <div class="social-meta">
+            <i class="fab fa-facebook"></i>
+            <div class="sub">
+              <h6>NCSC.Kuwait</h6>
+              <span>20/06/2025</span>
+            </div>
+
+          </div>
+          <p class="social-caption">
+            يناير 2025، دبي. الإمارات العربية المتحدة: تم خلال استحقاق بوكس السيبراني تكريم نخبة من المبدعين في المجال
+            الأمني السيبراني.
+          </p>
+        </div>
+      </div>
+
+      <!-- Post 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="social-post">
+          <img src="img/social1.jpg" alt="post-2" />
+          <div class="social-meta">
+            <i class="fab fa-facebook"></i>
+            <div class="sub">
+              <h6>NCSC.Kuwait</h6>
+              <span>20/06/2025</span>
+            </div>
+
+          </div>
+          <p class="social-caption">
+            يناير 2025، دبي. الإمارات: تم تكريم المساهمين في الإبتكار السيبراني خلال الحفل السنوي الذي يجمع خبراء المجال
+            من مختلف دول الخليج.
+          </p>
+        </div>
+      </div>
+
+      <!-- Post 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="social-post">
+          <img src="img/social2.jpg" alt="post-3" />
+          <div class="social-meta">
+            <i class="fab fa-facebook"></i>
+            <div class="sub">
+              <h6>NCSC.Kuwait</h6>
+              <span>20/06/2025</span>
+            </div>
+
+          </div>
+          <p class="social-caption">
+            مارس 2025، دبي. الإمارات العربية المتحدة: أعلن مركز دبي للأمن الإلكتروني بالتعاون مع المدرسة السيبرانية عن
+            إطلاق حملة تدريبية تستهدف 500 طالب وطالبة.
+          </p>
+        </div>
+      </div>
+
+      <!-- Post 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="social-post">
+          <img src="img/social.jpg" alt="post-4" />
+          <div class="social-meta">
+            <i class="fab fa-facebook"></i>
+            <div class="sub">
+              <h6>NCSC.Kuwait</h6>
+              <span>20/06/2025</span>
+            </div>
+
+          </div>
+          <p class="social-caption">
+            جائزة تصل قيمتها إلى 50,000 درهم ضمن مسابقة الأمن السيبراني بدولة الإمارات العربية المتحدة لعام 2025.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section text-white">
+    <div class="container">
+      <div class="align-content-center newsletter-content row">
+        <div class=" section-title  col-md-6">
+          <h3 class="white">الاشتراك في النشرة الإخبارية</h3>
+          <p>
+            لوريم إيبسوم دولار سيت أميت، كونسكتتور أديبا يسكينغ إليت، سيت د لوريم إيبسوم دولار سيت أميت، كونسكتتور أديبا
+            يسكينغ إليت، سيت دو أيوسيمود تيمبور لابوري.
+          </p>
+        </div>
+
+        <div class="align-content-center col-md-6 newsletter-buttons">
+          <button class="btn btn-light tab-right">إشتراك الأفراد</button>
+          <button class="btn btn-outline-light tab-left">إشتراك الشركات</button>
+        </div>
+      </div>
+
+      <hr style="border:2px solid #fff;  opacity: 1;" />
+
+      <!-- Footer Row -->
+      <div class="row py-4">
+        <!-- Footer Links -->
+        <div class="col-lg-8">
+          <div class="row footer-links">
+            <div class="col-md-4">
+              <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">نبذة عنا</a></li>
+                <li><a href="#">تواصل معنا</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li><a href="#">برامج الأمن السيبراني</a></li>
+                <li><a href="#">الخدمات الإلكترونية</a></li>
+                <li><a href="#">مبادئ الاستخدام</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <ul>
+                <li><a href="#">النظم واللوائح</a></li>
+                <li><a href="#">المشاركة الإلكترونية</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <!-- Logo & Social -->
+        <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+          <div class="footer-logo mb-3">
+            <img src="img/logo.svg" alt="logo" />
+          </div>
+          <p style="font-size: 14px;">
+            لوريم إيبسوم دولار سيت أميت، كونسكتتور أديبا يسكينغ إليت.
+          </p>
+          <div class="footer-input">
+            <input type="text" placeholder="أكتب هنا" />
+          </div>
+          <div class="social-icons mt-3">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fas fa-times-circle"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-snapchat"></i>
+            <i class="fab fa-tiktok"></i>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>Copyrighted © 2025 | National Cyber Security Center</p>
+      </div>
+    </div>
+  </section>
+  <!-- JS Files -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/bootstrap-datepicker.ar.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+
+</body>
+
+</html>

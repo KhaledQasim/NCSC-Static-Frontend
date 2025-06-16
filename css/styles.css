@@ -1,0 +1,665 @@
+.btn-bg-white {
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: bold;
+  justify-content: center;
+  margin-right: 14px;
+}
+.btn-bg-white:hover {
+  background-color: rgb(216.75, 216.75, 216.75);
+}
+
+.btn-bg-black {
+  border-radius: 50px;
+  width: 50%;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-gradient2 {
+  background: linear-gradient(to bottom, #004AAD, #00ACBD);
+  border: none;
+  color: #fff;
+  border-radius: 50px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+}
+.btn-gradient2 img {
+  width: 20px !important;
+}
+
+.btn-confirm {
+  background: linear-gradient(to top, #7f00ff, #00bcd4);
+  border: 1px solid #fff;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 33px;
+  width: 300px;
+}
+
+.btn-custom {
+  background-color: rgb(0, 65.3922, 156.06);
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+}
+
+.newsletter-buttons .btn {
+  margin: 10px;
+  padding: 12px 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.newsletter-buttons .btn-light {
+  color: #000;
+}
+.newsletter-buttons .tab-right {
+  border-radius: 0px 100px 100px 0px !important;
+}
+.newsletter-buttons .tab-left {
+  border-radius: 100px 0px 0px 100px !important;
+}
+
+.read-more {
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 113.02, 204);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: fit-content;
+}
+.read-more img {
+  width: 20px !important;
+}
+.read-more:hover {
+  background-color: rgb(0, 86.336, 163.2);
+}
+.read-more svg {
+  margin-left: 8px;
+}
+
+.navbar {
+  background-color: #000;
+}
+.navbar .navbar-nav .nav-link {
+  color: #fff !important;
+  margin: 0 10px;
+}
+.navbar .navbar-nav .nav-item.active {
+  border-top: 2px solid #00E5FF;
+}
+.navbar .navbar-nav .nav-item.active .nav-link {
+  color: #00E5FF !important;
+  margin: 0 10px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #00E5FF !important;
+}
+.navbar .navbar-nav .dropdown-menu {
+  background-color: rgb(20.4, 20.4, 20.4);
+  border: none;
+}
+.navbar .navbar-nav .dropdown-item {
+  color: #fff;
+}
+.navbar .navbar-nav .dropdown-item:hover {
+  background-color: #333333;
+}
+
+@media (max-width: 767px) {
+  .navbar-brand img {
+    height: 29px !important;
+  }
+}
+.form-box {
+  background-color: rgba(255, 255, 255, 0.19);
+  padding: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+.form-box p {
+  font-size: 14px;
+}
+
+.form-control {
+  background-color: rgba(33.915, 33.915, 33.915, 0.3);
+  border: 1px solid rgb(150.96, 150.96, 150.96);
+  color: #fff;
+  width: 47%;
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 13px;
+  text-align: right;
+}
+.form-control::placeholder {
+  color: rgb(170.085, 170.085, 170.085);
+}
+
+.nav-tabs {
+  gap: 4px;
+  border: none;
+}
+.nav-tabs .nav-link {
+  background-color: #333333;
+  color: #fff;
+  width: 100%;
+  border: 1px solid;
+}
+.nav-tabs .nav-item {
+  width: 47%;
+}
+.nav-tabs .tab-right {
+  border-radius: 0px 100px 100px 0px !important;
+}
+.nav-tabs .tab-left {
+  border-radius: 100px 0px 0px 100px !important;
+}
+.nav-tabs .nav-link.active {
+  background: linear-gradient(to bottom, #8f00ff, #00E5FF);
+  color: #fff;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 16px;
+}
+
+.icon {
+  opacity: 0.5;
+  padding: 0px 26px;
+}
+.icon.borderLeft {
+  border-left: 1px solid rgb(27.03, 163.96845, 255);
+}
+.icon img {
+  width: 24px;
+}
+
+.hero-section {
+  background: url(../img/banner.png), linear-gradient(#000, #000);
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    padding: 30px 0;
+    text-align: center;
+  }
+}
+.carousel-content {
+  padding: 40px;
+}
+.carousel-content h2 {
+  font-size: 2rem;
+}
+.carousel-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .carousel-content {
+    padding: 20px;
+  }
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.card-header img {
+  width: 73px;
+}
+
+.alert-card {
+  background: #fff;
+  border: 2px solid #007bff;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  min-height: 420px;
+}
+
+.alert-title {
+  font-weight: bold;
+}
+
+.alert-desc {
+  font-size: 0.85rem;
+  color: rgb(84.915, 84.915, 84.915);
+}
+
+.text-muted {
+  color: rgb(166.005, 166.005, 166.005) !important;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.alert-details {
+  margin-top: 1rem;
+}
+.alert-details .col-6 {
+  margin-bottom: 1rem;
+}
+.alert-details strong {
+  display: block;
+  color: #000;
+}
+.alert-details span {
+  color: rgb(68.085, 68.085, 68.085);
+  font-size: 0.9rem;
+}
+
+.alert-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-icon {
+  background-color: #04AABD;
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+  line-height: 44px;
+  border-radius: 50%;
+  text-align: center;
+}
+.download-icon img {
+  width: 28px;
+}
+
+.download-disabled {
+  background-color: rgb(223.89, 223.89, 223.89) !important;
+  pointer-events: none;
+}
+
+@media (max-width: 1000px) {
+  .CardsSection .col-md-4 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+.massage-section {
+  background-color: rgb(238.935, 238.935, 238.935);
+}
+.massage-section .title2 {
+  color: #004AAD;
+  font-weight: bold;
+}
+
+.bg-gray {
+  background: rgb(214.965, 214.965, 214.965) !important;
+  border-radius: 20px;
+  max-height: 295px;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.NewsImgs .item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.events-section {
+  padding: 40px 0;
+  background-color: rgb(238.935, 238.935, 238.935);
+}
+.events-section .event-box {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.events-section .event-box p {
+  position: relative;
+  margin-bottom: 0;
+}
+.events-section .event-box p::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(0, 54.675, 153);
+  position: absolute;
+  top: 10px;
+  right: -15px;
+  border-radius: 50%;
+}
+.events-section .event-box img {
+  width: 25px;
+}
+.events-section .events-box {
+  background: rgb(237.915, 237.915, 237.915);
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 1rem;
+}
+.events-section .events-box::-webkit-scrollbar {
+  width: 8px;
+}
+.events-section .events-box::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 4px;
+}
+
+@media (max-width: 1000px) {
+  .events-section .col-md-4,
+  .events-section .col-md-8 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+.calendar-box {
+  background: linear-gradient(to bottom, #034ea2, #00bcd4);
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.calendar-container {
+  background: linear-gradient(to right, #007bff, #00c4cc);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.datepicker-inline {
+  width: 100%;
+}
+
+.datepicker {
+  background-color: transparent;
+}
+.datepicker table {
+  margin: 0 auto;
+}
+.datepicker table tr td,
+.datepicker table tr th {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.datepicker table tr td.day:hover, .datepicker table tr td.focused {
+  background: #00bcd4;
+  color: #fff;
+}
+.datepicker table tr td.active, .datepicker table tr td.active:hover {
+  background-color: #000;
+  color: #fff;
+}
+.datepicker table tr td.new, .datepicker table tr td.old {
+  color: #bfbfbf;
+}
+.datepicker table tr td span {
+  display: block;
+  width: 47%;
+}
+.datepicker table tr td span.focused, .datepicker table tr td span:hover {
+  background: #0354a5;
+  color: #fff;
+}
+.datepicker table tr th.datepicker-switch {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.datepicker .datepicker-switch:hover,
+.datepicker .next:hover,
+.datepicker .prev:hover,
+.datepicker tfoot th:hover {
+  background: #0354a5;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.section-title {
+  text-align: right;
+  margin-bottom: 2rem;
+}
+.section-title h5 {
+  color: #999;
+}
+.section-title h3 {
+  font-weight: bold;
+  color: #04AABD;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.survey-section {
+  background-color: rgb(0, 51.23255, 138.21);
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.survey-question {
+  margin-bottom: 2rem;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.progress {
+  height: 20px;
+  background-color: rgb(237.915, 237.915, 237.915);
+  margin-bottom: 0.5rem;
+  border-radius: 30px;
+}
+
+.progress-bar {
+  font-weight: bold;
+}
+
+.option-container {
+  display: inline-block;
+  width: 30%;
+  margin-inline-end: 1.5%;
+  vertical-align: top;
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .survey-question .d-flex {
+    flex-direction: column;
+  }
+  .w-60 {
+    width: 100%;
+  }
+  .datepicker-inline {
+    width: 100%;
+  }
+}
+.news-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: rgb(110.925, 110.925, 110.925);
+}
+
+.color-cyan {
+  color: #04AABD;
+}
+
+.news-date {
+  color: #04AABD;
+  font-size: 0.85rem;
+}
+
+.news-box {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #04AABD;
+}
+.news-box img {
+  object-fit: cover;
+  max-height: 180px;
+}
+
+.news-subtitle {
+  font-size: 0.9rem;
+  color: rgb(84.915, 84.915, 84.915);
+}
+
+.social-icons i {
+  font-size: 24px;
+  color: #666666;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+.social-icons i:hover {
+  color: #007bff;
+}
+.social-icons .active {
+  color: rgb(92.39925, 124.0613025, 218.70075);
+}
+
+.social-post {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.social-post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.social-caption {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 0.85rem;
+  color: rgb(110.925, 110.925, 110.925);
+}
+
+.social-meta {
+  display: flex;
+  font-size: 0.9rem;
+  margin-top: 11px;
+  color: rgb(84.915, 84.915, 84.915);
+  align-items: center;
+  text-align: right;
+}
+.social-meta h6 {
+  color: #04AABD;
+  margin: 0;
+}
+.social-meta .sub {
+  margin-right: 8px;
+}
+.social-meta i {
+  color: rgb(92.39925, 124.0613025, 218.70075);
+  font-size: 23px;
+}
+
+@media (max-width: 576px) {
+  .social-icons i {
+    font-size: 20px;
+    margin: 0 6px;
+  }
+}
+.newsletter-section {
+  background: url("../img/footer.png") no-repeat center center rgb(0, 54.675, 153);
+  background-size: cover;
+  position: relative;
+  padding: 60px 15px 0;
+}
+.newsletter-section .social-icons i {
+  font-size: 20px;
+  margin: 0 8px;
+  color: #fff;
+  transition: 0.3s;
+}
+.newsletter-section .social-icons i:hover {
+  color: #ccc;
+}
+
+.newsletter-content {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.newsletter-content h2 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-input {
+  margin-top: 15px;
+}
+.footer-input input {
+  border-radius: 20px;
+  padding: 6px 12px;
+  border: 1px solid #fff;
+  outline: none;
+  background-color: rgba(33.915, 33.915, 33.915, 0.3);
+  color: #fff;
+}
+
+/*# sourceMappingURL=styles.css.map */

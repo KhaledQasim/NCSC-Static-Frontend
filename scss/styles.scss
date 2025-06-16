@@ -1,0 +1,286 @@
+// We get our color function and global variables from these imports
+@use "sass:color";
+@use 'variables' as *;
+
+// This line will import all the components in components/_index.scss
+@forward 'components/';
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Noto Kufi Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Used in multiple sections and not specific to one component
+.section-title {
+  text-align: right;
+  margin-bottom: 2rem;
+
+  h5 {
+    color: #999;
+  }
+
+  h3 {
+    font-weight: bold;
+    color: $color-accent-blue;
+  }
+}
+
+
+.white {
+  color: $color-white !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.survey-section {
+  background-color: color.adjust($color-primary, $hue: 6.7deg, $lightness: -22.9%);;
+  color: $color-white;
+  padding: 2rem 1rem;
+}
+
+.survey-question {
+  margin-bottom: 2rem;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+
+.progress {
+  height: 20px;
+  background-color: color.scale($color-white, $lightness: -6.7%);;
+  margin-bottom: 0.5rem;
+  border-radius: 30px;
+}
+
+.progress-bar {
+  font-weight: bold;
+}
+
+.option-container {
+  display: inline-block;
+  width: 30%;
+  margin-inline-end: 1.5%;
+  vertical-align: top;
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  .survey-question .d-flex {
+    flex-direction: column;
+  }
+
+  .w-60 {
+    width: 100%;
+  }
+
+  .datepicker-inline {
+    width: 100%;
+  }
+}
+
+.news-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: color.scale($color-white, $lightness: -56.5%);;
+}
+
+.color-cyan {
+  color: $color-accent-blue;
+}
+
+.news-date {
+  color: $color-accent-blue;
+  font-size: 0.85rem;
+}
+
+
+
+.news-box {
+  background-color: $color-white;
+  padding: 1rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $color-accent-blue;
+
+  img {
+    object-fit: cover;
+    max-height: 180px;
+  }
+}
+
+.news-subtitle {
+  font-size: 0.9rem;
+  color: color.scale($color-white, $lightness: -66.7%);;
+}
+
+.social-icons {
+  i {
+    font-size: 24px;
+    color: color.scale($color-white, $lightness: -60%);;
+    margin: 0 10px;
+    transition: 0.3s;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  .active {
+    color: color.adjust($color-primary, $hue: 13.9deg, $saturation: -36.5%, $lightness: 11%);
+  }
+}
+
+.social-post {
+  background-color: $color-white;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+.social-caption {
+  margin-top: 10px;
+  text-align: right;
+  font-size: 0.85rem;
+  color: color.scale($color-white, $lightness: -56.5%);;
+}
+
+.social-meta {
+  display: flex;
+  font-size: 0.9rem;
+  margin-top: 11px;
+  color: color.scale($color-white, $lightness: -66.7%);;
+  align-items: center;
+  text-align: right;
+
+  h6 {
+    color: $color-accent-blue;
+    margin: 0;
+  }
+
+  .sub {
+    margin-right: 8px;
+  }
+
+  i {
+    color: color.adjust($color-primary, $hue: 13.9deg, $saturation: -36.5%, $lightness: 11%);;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 576px) {
+  .social-icons i {
+    font-size: 20px;
+    margin: 0 6px;
+  }
+}
+
+.newsletter-section {
+  background: url('../img/footer.png') no-repeat center center color.adjust($color-primary, $hue: 7.5deg, $lightness: -20%);;
+  background-size: cover;
+  position: relative;
+  padding: 60px 15px 0;
+
+  .social-icons i {
+    font-size: 20px;
+    margin: 0 8px;
+    color: $color-white;
+    transition: 0.3s;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+}
+
+.newsletter-content {
+  text-align: center;
+  padding-bottom: 40px;
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+}
+
+
+
+.footer-links {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 8px;
+      font-size: 14px;
+
+      a {
+        color: $color-white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-input {
+  margin-top: 15px;
+
+  input {
+    border-radius: 20px;
+    padding: 6px 12px;
+    border: 1px solid $color-white;
+    outline: none;
+    background-color:rgba(color.scale($color-black, $lightness: 13.3%), 0.3);;
+    color: $color-white;
+  }
+}
+
+

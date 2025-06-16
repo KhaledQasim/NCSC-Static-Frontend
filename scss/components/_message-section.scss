@@ -1,0 +1,13 @@
+@use "sass:color";
+@use '../variables' as *;
+
+.massage-section {
+  background-color: color.scale($color-white, $lightness: -6.3%);
+
+  .title2 {
+    color: $color-accent-blue-gradient-start;
+    font-weight: bold;
+  }
+}
+
+

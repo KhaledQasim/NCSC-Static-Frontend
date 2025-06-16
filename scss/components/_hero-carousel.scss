@@ -1,0 +1,25 @@
+@use "sass:color";
+@use '../variables' as *;
+
+.carousel-content {
+  padding: 40px;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+}
+
+// Media Queries
+@media (max-width: 767px) {
+
+  .carousel-content {
+    padding: 20px;
+  }
+
+  
+}

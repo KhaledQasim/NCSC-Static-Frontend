@@ -1,0 +1,35 @@
+// Imports
+@use "sass:color";
+
+//Variables
+$color-black: #000;
+$color-white: #fff;
+$base-dark-gray: color.scale($color-white, $lightness: -86.7%);
+
+
+$color-primary: #007bff; // Used for links, borders, and some backgrounds
+$color-primary-dark: color.scale($color-primary, $lightness: -10%); // Darker shade of primary for hover states
+$color-primary-light: color.scale($color-primary, $lightness: 10%); // Lighter shade of primary
+
+$color-accent-blue: #04AABD; // A distinct blue-green color
+$color-accent-blue-dark: color.scale($color-accent-blue, $lightness: -10%); // Darker accent blue
+$color-accent-purple: #8f00ff; // A distinct purple color
+$color-accent-blue-gradient-start: #004AAD;
+$color-accent-blue-gradient-end: #00ACBD;
+$color-accent-purple-gradient-start: #7f00ff;
+$color-accent-purple-gradient-end: #00bcd4;
+
+
+$color-secondary: #00E5FF; // Used for active states and highlights
+$color-secondary-dark: color.scale($color-secondary, $lightness: -20%); // Darker shade of secondary for hover states
+
+$color-error: #d32f2f;
+$color-warning: #fbc02d;
+
+//Navbar variables
+$navbar-link-color: $color-white;
+
+//Button Variables
+$gradient-btn-primary: linear-gradient(to bottom, $color-accent-blue-gradient-start, $color-accent-blue-gradient-end);
+$gradient-btn-secondary: linear-gradient(to bottom, $color-accent-purple, $color-secondary);
+$gradient-btn-hover: linear-gradient(to right, $color-primary-dark, $color-accent-blue-dark);

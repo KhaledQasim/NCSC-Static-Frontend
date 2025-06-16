@@ -1,0 +1,97 @@
+@use "sass:color";
+@use "../variables" as *; // Assuming $color-white and $color-primary are defined here
+
+// Calendar Box Styling
+.calendar-box {
+  background: linear-gradient(to bottom, #034ea2, #00bcd4);
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+// Calendar Container Styling (if used elsewhere)
+.calendar-container {
+  background: linear-gradient(to right, #007bff, #00c4cc);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+// Datepicker General Styling
+.datepicker-inline {
+  width: 100%; // Ensures the inline datepicker takes full width
+}
+
+.datepicker {
+  background-color: transparent; // Keeps the datepicker background transparent
+
+  table {
+    margin: 0 auto; // Centers the datepicker table
+
+    tr {
+      td,
+      th {
+        width: 50px; // Consolidated to 50px, overriding the earlier 36px
+        height: 50px; // Consolidated to 50px, overriding the earlier 36px
+        text-align: center;
+      }
+
+      td {
+        // Hover and focused states for individual days
+        &.day:hover,
+        &.focused {
+          background: #00bcd4;
+          color: #fff;
+        }
+
+        // Active/Selected day state
+        &.active,
+        &.active:hover {
+          background-color: #000;
+          color: #fff;
+        }
+
+        // Days from previous/next month (dimmed)
+        &.new,
+        &.old {
+          color: #bfbfbf;
+        }
+
+        // Styles for month/year view items (e.g., "Jan", "Feb", "2024")
+        span {
+          display: block;
+          width: 47%; // Specific width for these span elements
+          // line-height can be added here if needed for vertical centering within the cell
+
+          &.focused,
+          &:hover {
+            background: #0354a5; // Darker blue for hover/focused month/year view
+            color: #fff;
+          }
+        }
+      }
+
+      th {
+        // Specific style for the datepicker switch (month/year display in header)
+        &.datepicker-switch {
+          width: 100%; // Ensures it takes full width of the header
+          height: 100%; // Ensures it takes full height of the header
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  
+  // Hover states for navigation arrows and footer elements
+  .datepicker-switch:hover,
+  .next:hover,
+  .prev:hover,
+  tfoot th:hover {
+    background: #0354a5; // Darker blue for navigation element hovers
+  }
+}
+
+
+
