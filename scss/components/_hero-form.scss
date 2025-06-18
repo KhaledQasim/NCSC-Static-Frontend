@@ -1,5 +1,6 @@
-@use "sass:color";
-@use '../variables' as *;
+// Remove this line for older Sass compatibility:
+// @use "sass:color";
+@use '../variables' as *; // Changed from @use '../variables' as *;
 
 .form-box {
   background-color: rgba($color-white, 0.19);
@@ -15,7 +16,7 @@
 
 .form-control {
   background-color: rgba($base-dark-gray, 0.3);
-  border: 1px solid color.scale($color-white, $lightness: -40.8%);
+  border: 1px solid darken($color-white, 40.8%); // Changed from color.scale
   color: $color-white;
   width: 47%;
   display: inline-block;
@@ -24,7 +25,7 @@
   text-align: right;
 
   &::placeholder {
-    color: color.scale($color-white, $lightness: -33.3%);
+    color: darken($color-white, 33.3%); // Changed from color.scale
   }
 }
 
@@ -34,7 +35,7 @@
     border: none;
 
     .nav-link {
-        background-color: color.scale($color-black, $lightness: 20%);
+        background-color: lighten($color-black, 20%); // Changed from color.scale
         color: $color-white;
         width: 100%;
         border: 1px solid;
@@ -71,7 +72,7 @@
   padding: 0px 26px;
 
   &.borderLeft {
-    border-left: 1px solid color.adjust($color-primary,$hue:  -7.1deg,$lightness: 5.3%  );
+    border-left: 1px solid lighten(adjust-hue($color-primary, -7.1deg), 5.3%); // Changed from color.adjust
   }
 
   img {

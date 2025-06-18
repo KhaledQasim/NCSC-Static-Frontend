@@ -1,13 +1,12 @@
-@use "sass:color";
-@use '../variables' as *;
+// Remove this line for older Sass compatibility:
+// @use "sass:color";
+@use '../variables' as *; // Changed from @use '../variables' as *;
 
 .massage-section {
-  background-color: color.scale($color-white, $lightness: -6.3%);
+  background-color: darken($color-white, 6.3%); // Changed from color.scale
 
   .title2 {
     color: $color-accent-blue-gradient-start;
     font-weight: bold;
   }
 }
-
-

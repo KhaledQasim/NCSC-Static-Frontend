@@ -1,18 +1,21 @@
-// Imports
-@use "sass:color";
+// No @use "sass:color"; needed for these older functions
 
 //Variables
 $color-black: #000;
 $color-white: #fff;
-$base-dark-gray: color.scale($color-white, $lightness: -86.7%);
+// For $base-dark-gray: color.scale($color-white, $lightness: -86.7%);
+// This is a very significant darkening. `darken($color-white, 86.7%)` will result in a color very close to black.
+// If the exact shade is critical, you might need to manually pick a hex value for base-dark-gray or
+// slightly adjust the percentage to get the desired look.
+$base-dark-gray: darken($color-white, 86.7%);
 
 
 $color-primary: #007bff; // Used for links, borders, and some backgrounds
-$color-primary-dark: color.scale($color-primary, $lightness: -10%); // Darker shade of primary for hover states
-$color-primary-light: color.scale($color-primary, $lightness: 10%); // Lighter shade of primary
+$color-primary-dark: darken($color-primary, 10%); // Darker shade of primary for hover states
+$color-primary-light: lighten($color-primary, 10%); // Lighter shade of primary
 
 $color-accent-blue: #04AABD; // A distinct blue-green color
-$color-accent-blue-dark: color.scale($color-accent-blue, $lightness: -10%); // Darker accent blue
+$color-accent-blue-dark: darken($color-accent-blue, 10%); // Darker accent blue
 $color-accent-purple: #8f00ff; // A distinct purple color
 $color-accent-blue-gradient-start: #004AAD;
 $color-accent-blue-gradient-end: #00ACBD;
@@ -21,7 +24,7 @@ $color-accent-purple-gradient-end: #00bcd4;
 
 
 $color-secondary: #00E5FF; // Used for active states and highlights
-$color-secondary-dark: color.scale($color-secondary, $lightness: -20%); // Darker shade of secondary for hover states
+$color-secondary-dark: darken($color-secondary, 20%); // Darker shade of secondary for hover states
 
 $color-error: #d32f2f;
 $color-warning: #fbc02d;

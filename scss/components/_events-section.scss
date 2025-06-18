@@ -1,8 +1,9 @@
-@use "sass:color";
-@use '../variables' as *;
+// Remove this line for older Sass compatibility:
+// @use "sass:color";
+@use '../variables' as *; // Changed from @use '../variables' as *;
 
 .bg-gray {
-  background: color.scale($color-white, $lightness: -15.7%) !important; // Utility background color
+  background: darken($color-white, 15.7%) !important; // Changed from color.scale
   border-radius: 20px;
   max-height: 295px; // Specific max-height for this utility class
   overflow-y: auto;
@@ -25,7 +26,7 @@
 
 .events-section {
   padding: 40px 0; // Standard padding for the section
-  background-color: color.scale($color-white, $lightness: -6.3%); // Dynamic background color
+  background-color: darken($color-white, 6.3%); // Changed from color.scale
 
   // Individual Event Box Styling
   .event-box {
@@ -45,7 +46,7 @@
         content: "";
         width: 10px;
         height: 10px;
-        background-color: color.adjust($color-primary, $hue: 7.5deg, $lightness: -20%); // Dynamically adjusted color for the bullet point
+        background-color: darken(adjust-hue($color-primary, 7.5deg), 20%); // Changed from color.adjust
         position: absolute;
         top: 10px;
         right: -15px; // Positioning for RTL bullet point
@@ -60,7 +61,7 @@
 
   // Scrollable Events List Container
   .events-box {
-    background: color.scale($color-white, $lightness: -6.7%); // Dynamic background for the list
+    background: darken($color-white, 6.7%); // Changed from color.scale
     border-radius: 10px;
     max-height: 200px;
     overflow-y: auto;

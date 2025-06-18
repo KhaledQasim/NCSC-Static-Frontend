@@ -1,12 +1,6 @@
-@use "sass:color";
-@use '../variables' as *;
-
-
-
-
-
-
-
+// Remove this line for older Sass compatibility:
+// @use "sass:color";
+@use '../variables' as *; // Changed from @use '../variables' as *;
 
 .card-header {
   display: flex;
@@ -38,11 +32,11 @@
 
 .alert-desc {
   font-size: 0.85rem;
-  color: color.scale($color-white, $lightness: -66.7%);
+  color: darken($color-white, 66.7%); // Changed from color.scale
 }
 
 .text-muted {
-  color:  color.scale($color-white, $lightness: -34.9%) !important;
+  color:  darken($color-white, 34.9%) !important; // Changed from color.scale
   font-size: 25px;
   font-weight: bold;
 }
@@ -61,7 +55,7 @@
   }
 
   span {
-    color: color.scale($color-white, $lightness: -73.3%);
+    color: darken($color-white, 73.3%); // Changed from color.scale
     font-size: 0.9rem;
   }
 }
@@ -72,7 +66,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
 
 
 .download-icon {
@@ -91,7 +84,7 @@
 
 
 .download-disabled {
-  background-color: color.scale($color-white, $lightness: -12.2%) !important;
+  background-color: darken($color-white, 12.2%) !important; // Changed from color.scale
   pointer-events: none;
 }
 

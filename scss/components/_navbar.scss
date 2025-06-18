@@ -1,5 +1,6 @@
-@use "sass:color";
-@use '../variables' as *;
+// Remove this line for older Sass compatibility:
+// @use "sass:color";
+@use '../variables' as *; // Changed from @use '../variables' as *;
 
 // Navbar
 .navbar {
@@ -25,22 +26,23 @@
     }
 
     .dropdown-menu {
-      background-color: color.scale($color-black, $lightness: 8%);
+      background-color: lighten($color-black, 8%); // Changed from color.scale
       border: none;
+      
     }
 
     .dropdown-item {
       color: $color-white;
 
       &:hover {
-        background-color: color.scale($color-black, $lightness: 20%);
+        background-color: lighten($color-black, 20%); // Changed from color.scale
       }
     }
   }
 }
 
 @media (max-width: 767px) {
-    
+
   .navbar-brand img {
     height: 29px !important;
   }

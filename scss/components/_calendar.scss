@@ -1,5 +1,5 @@
-@use "sass:color";
-@use "../variables" as *; // Assuming $color-white and $color-primary are defined here
+// Remove the @use "sass:color"; line as it's not compatible with older Sass
+@use "../variables" as *; // Changed from @use "../variables" as *;
 
 // Calendar Box Styling
 .calendar-box {
@@ -83,7 +83,6 @@
     }
   }
 
-  
   // Hover states for navigation arrows and footer elements
   .datepicker-switch:hover,
   .next:hover,
@@ -92,6 +91,3 @@
     background: #0354a5; // Darker blue for navigation element hovers
   }
 }
-
-
-
