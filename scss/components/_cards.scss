@@ -1,6 +1,4 @@
-// Remove this line for older Sass compatibility:
-// @use "sass:color";
-@use '../variables' as *; // Changed from @use '../variables' as *;
+@use '../variables' as *;
 
 .card-header {
   display: flex;

@@ -1,8 +1,5 @@
-// Remove this line for older Sass compatibility:
-// @use "sass:color";
-@use '../variables' as *; // Changed from @use '../variables' as *;
+@use '../variables' as *; 
 
-// Navbar
 .navbar {
   background-color: $color-black;
 
@@ -25,6 +22,7 @@
       color: $color-secondary !important;
     }
 
+    
     .dropdown-menu {
       background-color: lighten($color-black, 8%); // Changed from color.scale
       border: none;

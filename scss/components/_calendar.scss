@@ -1,5 +1,4 @@
-// Remove the @use "sass:color"; line as it's not compatible with older Sass
-@use "../variables" as *; // Changed from @use "../variables" as *;
+@use "../variables" as *;
 
 // Calendar Box Styling
 .calendar-box {
