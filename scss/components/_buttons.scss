@@ -1,6 +1,5 @@
 @use '../variables' as *;
 
-// Buttons
 .btn-bg-white {
   background-color: $color-white;
   width: 35px;
@@ -42,7 +41,11 @@
 }
 
 .btn-confirm {
-  background: linear-gradient(to top, $color-accent-purple-gradient-start, $color-accent-purple-gradient-end);
+  background: linear-gradient(
+    to top,
+    $color-accent-purple-gradient-start,
+    $color-accent-purple-gradient-end
+  );
   border: 1px solid $color-white;
   color: $color-white;
   font-weight: bold;
@@ -52,7 +55,10 @@
 }
 
 .btn-custom {
-  background-color: darken(adjust-hue($color-primary, 3.8deg), 19.4%); // Changed from color.adjust
+  background-color: darken(
+    adjust-hue($color-primary, 3.8deg),
+    19.4%
+  ); // Changed from color.adjust
   color: $color-white;
   padding: 0.5rem 1.2rem;
   border-radius: 20px;
@@ -69,7 +75,6 @@
 
   .btn-light {
     color: $color-black;
-
   }
 
   .tab-right {
@@ -78,13 +83,15 @@
   .tab-left {
     border-radius: 100px 0px 0px 100px !important;
   }
-
 }
 
 .read-more {
   display: flex;
   align-items: center;
-  background-color: darken(adjust-hue($color-primary, -4.3deg), 10%); // Changed from color.adjust
+  background-color: darken(
+    adjust-hue($color-primary, -4.3deg),
+    10%
+  ); // Changed from color.adjust
   color: $color-white;
   padding: 10px 20px;
   border-radius: 25px;
@@ -98,7 +105,10 @@
   }
 
   &:hover {
-    background-color: darken(adjust-hue($color-primary, -2.8deg), 18%); // Changed from color.adjust
+    background-color: darken(
+      adjust-hue($color-primary, -2.8deg),
+      18%
+    ); // Changed from color.adjust
   }
 
   svg {
@@ -106,20 +116,46 @@
   }
 }
 
-// .btn-gradient {
-//   background: $gradient-btn-secondary;
-//   border: none;
-//   color: $color-white;
-// }
+.white-back-test-1 {
+  background: #fff;
+}
 
-// .btn.btn-gradient {
-//   background: linear-gradient(to right, $color-primary, $color-accent-blue);
-//   border: none;
-//   color: $color-white;
-//   padding: 6px 16px;
-//   font-weight: bold;
+/// sitecore header code
+#header-contactUs-button {
+  color: #fff;
+  @extend .btn-gradient2;
+}
 
-//   &:hover {
-//     background: $gradient-btn-hover;
-//   }
-// }
+// remove promo white border from contact us header btn
+.promo {
+  padding: 0px !important;
+  overflow: visible !important;
+  box-sizing: inherit !important;
+  .component-content {
+    border-width: 0px !important;
+    border-style: none !important;
+    border-color: transparent !important;
+  }
+}
+
+.clean-promo-link-contact-us-header {
+  color: $color-white !important;
+  text-decoration: none !important;
+  &:hover {
+    color: $base-dark-gray !important;
+  }
+}
+
+// fix heading langauge link component
+.my-link-fix {
+  
+  a {
+   @extend .btn-bg-white;
+   border-bottom: 0px !important;
+   color: $color-black;
+   &:hover{
+    color: $color-black;
+   }
+  }
+}
+

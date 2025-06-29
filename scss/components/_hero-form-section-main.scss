@@ -2,7 +2,7 @@
 @use '../variables' as *;
 
 .hero-section {
-  background: url(../img/banner.png), linear-gradient($color-black, $color-black);
+  background: url(../images/banner.png), linear-gradient($color-black, $color-black);
   background-size: cover;
   min-height: 100vh;
   color: $color-white;

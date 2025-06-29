@@ -1,0 +1,46 @@
+@use '../variables' as *; 
+
+
+.survey-section {
+  background-color: darken(adjust-hue($color-primary, 6.7deg), 22.9%);
+  color: $color-white;
+  padding: 2rem 1rem;
+}
+
+.survey-question {
+  margin-bottom: 2rem;
+}
+
+.progress {
+  height: 20px;
+  background-color: darken($color-white, 6.7%);
+  margin-bottom: 0.5rem;
+  border-radius: 30px;
+}
+
+.progress-bar {
+  font-weight: bold;
+}
+
+.option-container {
+  display: inline-block;
+  width: 30%;
+  margin-inline-end: 1.5%;
+  vertical-align: top;
+  text-align: right;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+@media (max-width: 767px) {
+  .survey-question .d-flex {
+    flex-direction: column;
+  }
+
+  .w-60 {
+    width: 100%;
+  }
+}
+

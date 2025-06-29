@@ -1,0 +1,33 @@
+@use '../variables' as *; 
+
+.news-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: darken($color-white, 56.5%);
+}
+
+.color-cyan {
+  color: $color-accent-blue;
+}
+
+.news-date {
+  color: $color-accent-blue;
+  font-size: 0.85rem;
+}
+
+.news-box {
+  background-color: $color-white;
+  padding: 1rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $color-accent-blue;
+
+  img {
+    object-fit: cover;
+    max-height: 180px;
+  }
+}
+
+.news-subtitle {
+  font-size: 0.9rem;
+  color: darken($color-white, 66.7%);
+}

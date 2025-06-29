@@ -2,10 +2,7 @@
 //Variables
 $color-black: #000;
 $color-white: #fff;
-// For $base-dark-gray: color.scale($color-white, $lightness: -86.7%);
-// This is a very significant darkening. `darken($color-white, 86.7%)` will result in a color very close to black.
-// If the exact shade is critical, you might need to manually pick a hex value for base-dark-gray or
-// slightly adjust the percentage to get the desired look.
+// Darker or ligher shades of the same color must be derived from darken and lighten functions 
 $base-dark-gray: darken($color-white, 86.7%);
 
 

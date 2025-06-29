@@ -1,0 +1,65 @@
+@use '../variables' as *; 
+
+.newsletter-section {
+  background: url(../images/footer.png) no-repeat center center darken(adjust-hue($color-primary, 7.5deg), 20%);  background-size: cover;
+  position: relative;
+  padding: 60px 15px 0;
+
+  .social-icons i {
+    font-size: 20px;
+    margin: 0 8px;
+    color: $color-white;
+    transition: 0.3s;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+}
+
+.newsletter-content {
+  text-align: center;
+  padding-bottom: 40px;
+
+  h2 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+}
+
+.footer-links {
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 8px;
+      font-size: 14px;
+
+      a {
+        color: $color-white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-input {
+  margin-top: 15px;
+
+  input {
+    border-radius: 20px;
+    padding: 6px 12px;
+    border: 1px solid $color-white;
+    outline: none;
+    background-color: rgba(lighten($color-black, 13.3%), 0.3);
+    color: $color-white;
+  }
+}

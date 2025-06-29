@@ -1,9 +1,17 @@
 @forward 'buttons';
-@forward 'navbar';
-@forward 'hero-form';
-@forward 'hero-section';
-@forward 'hero-carousel';
-@forward 'cards';
-@forward 'message-section';
-@forward 'events-section';
 @forward 'calendar';
+
+@forward 'cve-cards';
+@forward 'events-section-calendar';
+@forward 'events-section';
+
+@forward 'hero-carousel';
+@forward 'hero-form-section-main';
+@forward 'hero-form';
+@forward 'message-section';
+
+@forward 'navbar';
+@forward 'news';
+@forward 'newsletter-footer';
+@forward 'social';
+@forward 'survey-section';
