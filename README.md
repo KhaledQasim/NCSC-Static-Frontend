@@ -53,3 +53,12 @@ sass --watch styles.scss:../css/styles.css
 ```
 
 Now any changes made to the styles.scss will be compiled and added to the styles.css file that is inside the css folder
+
+# Using the colors best practices 
+
+Always use color variables when defining a color for a component in the scss file 
+
+Always check if the color that you will use already exists in the `_variables.scss` file and use it if it does.
+
+If you must create a new color then clearly define its variable name to show to what component and section it belongs to 
+
