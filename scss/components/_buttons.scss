@@ -105,6 +105,7 @@
   }
 
   &:hover {
+    color: $color-white;
     background-color: darken(
       adjust-hue($color-primary, -2.8deg),
       18%
