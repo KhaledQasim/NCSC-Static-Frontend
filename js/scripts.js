@@ -1,4 +1,11 @@
 $(document).ready(function () {
+  var carouselMovment = true;
+  var $owlCarousel = $(".owl-carousel");
+  if ($owlCarousel.hasClass("stop-carousel")){
+    carouselMovment = false;
+  }
+
+
   $("#calendar")
     .datepicker({
       language: "ar",
@@ -15,7 +22,7 @@ $(document).ready(function () {
     nav: false,
     dots: true,
     items: 1,
-    autoplay: true,
+    autoplay: carouselMovment,
     autoplayTimeout: 5000,
   });
   $("#mainNewsCarousel").owlCarousel({
@@ -45,8 +52,8 @@ function submitSurvey() {
 
     radios.forEach((radio) => {
       const val = radio.value;
-      if (!counts[val]) counts[val] = 50; // قيمة افتراضية مبدئية
-      if (radio.checked) counts[val] += 1;
+      if (!counts[val]){ counts[val] = 50} // قيمة افتراضية مبدئية
+      if (radio.checked){ counts[val] += 1}
       total += 1;
     });
 
