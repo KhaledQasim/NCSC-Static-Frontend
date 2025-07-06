@@ -1,3 +1,7 @@
+# Windows created files in the image directory
+Thumbs.db
+Thumbs.db:encryptable
+
 # Logs
 logs
 *.log
