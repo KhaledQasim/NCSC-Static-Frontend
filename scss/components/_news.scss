@@ -1,8 +1,8 @@
 @use '../variables' as *; 
 
 .news-title {
-  font-weight: bold;
-  font-size: 1.1rem;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-md;
   color: darken($color-white, 56.5%);
 }
 
@@ -12,13 +12,13 @@
 
 .news-date {
   color: $color-accent-blue;
-  font-size: 0.85rem;
+  font-size: $font-size-xs;
 }
 
 .news-box {
   background-color: $color-white;
-  padding: 1rem;
-  margin-bottom: 20px;
+  padding: $spacing-sm;
+  margin-bottom: $spacing-md;
   border-bottom: 1px solid $color-accent-blue;
 
   img {
@@ -28,6 +28,6 @@
 }
 
 .news-subtitle {
-  font-size: 0.9rem;
+  font-size: $font-size-sm;
   color: darken($color-white, 66.7%);
 }

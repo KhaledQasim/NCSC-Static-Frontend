@@ -2,11 +2,13 @@
 
 .navbar {
   background-color: $color-black;
+  position: relative;
+  z-index: $z-index-fixed;
 
   .navbar-nav {
     .nav-link {
-      color: $color-white !important;
-      margin: 0 10px;
+      color: $navbar-link-color !important;
+      margin: 0 $spacing-xs;
     }
 
     .nav-item.active {
@@ -14,7 +16,7 @@
 
       .nav-link {
         color: $color-secondary !important;
-        margin: 0 10px;
+        margin: 0 $spacing-xs;
       }
     }
 
@@ -22,25 +24,23 @@
       color: $color-secondary !important;
     }
 
-    
     .dropdown-menu {
-      background-color: lighten($color-black, 8%); // Changed from color.scale
+      background-color: lighten($color-black, 8%);
       border: none;
-      
+      z-index: $z-index-dropdown;
     }
 
     .dropdown-item {
       color: $color-white;
 
       &:hover {
-        background-color: lighten($color-black, 20%); // Changed from color.scale
+        background-color: lighten($color-black, 20%);
       }
     }
   }
 }
 
-@media (max-width: 767px) {
-
+@media (max-width: $breakpoint-md) {
   .navbar-brand img {
     height: 29px !important;
   }

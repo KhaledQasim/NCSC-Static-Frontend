@@ -2,9 +2,9 @@
 
 .social-icons {
   i {
-    font-size: 24px;
+    font-size: $font-size-xl;
     color: darken($color-white, 60%);
-    margin: 0 10px;
+    margin: 0 $spacing-xs;
     transition: 0.3s;
 
     &:hover {
@@ -19,30 +19,30 @@
 
 .social-post {
   background-color: $color-white;
-  border-radius: 12px;
-  padding: 15px;
-  margin-bottom: 30px;
+  border-radius: $border-radius-sm;
+  padding: $spacing-sm;
+  margin-bottom: $spacing-lg;
   text-align: center;
 
   img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: $border-radius-sm;
   }
 }
 
 .social-caption {
-  margin-top: 10px;
+  margin-top: $spacing-xs;
   text-align: right;
-  font-size: 0.85rem;
+  font-size: $font-size-xs;
   color: darken($color-white, 56.5%);
 }
 
 .social-meta {
   display: flex;
-  font-size: 0.9rem;
-  margin-top: 11px;
+  font-size: $font-size-sm;
+  margin-top: $spacing-sm;
   color: darken($color-white, 66.7%);
   align-items: center;
   text-align: right;
@@ -53,18 +53,18 @@
   }
 
   .sub {
-    margin-right: 8px;
+    margin-right: $spacing-xs;
   }
 
   i {
     color: lighten(desaturate(adjust-hue($color-primary, 13.9deg), 36.5%), 11%);
-    font-size: 23px;
+    font-size: $font-size-xl;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: $breakpoint-sm) {
   .social-icons i {
-    font-size: 20px;
-    margin: 0 6px;
+    font-size: $font-size-lg;
+    margin: 0 $spacing-xs;
   }
 }

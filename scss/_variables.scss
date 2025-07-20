@@ -1,34 +1,88 @@
-
-//Variables
+// Color System
+// Base Colors
 $color-black: #000;
 $color-white: #fff;
-// Darker or ligher shades of the same color must be derived from darken and lighten functions 
 $base-dark-gray: darken($color-white, 86.7%);
 
+// Brand Colors
+$color-primary: #007bff;
+$color-primary-dark: darken($color-primary, 10%);
+$color-primary-light: lighten($color-primary, 10%);
+$color-secondary: #00E5FF;
+$color-secondary-dark: darken($color-secondary, 20%);
 
-$color-primary: #007bff; // Used for links, borders, and some backgrounds
-$color-primary-dark: darken($color-primary, 10%); // Darker shade of primary for hover states
-$color-primary-light: lighten($color-primary, 10%); // Lighter shade of primary
+// Accent Colors
+$color-accent-blue: #04AABD;
+$color-accent-blue-dark: darken($color-accent-blue, 10%);
+$color-accent-purple: #8f00ff;
 
-$color-accent-blue: #04AABD; // A distinct blue-green color
-$color-accent-blue-dark: darken($color-accent-blue, 10%); // Darker accent blue
-$color-accent-purple: #8f00ff; // A distinct purple color
+// Gradient Colors
 $color-accent-blue-gradient-start: #004AAD;
 $color-accent-blue-gradient-end: #00ACBD;
 $color-accent-purple-gradient-start: #7f00ff;
 $color-accent-purple-gradient-end: #00bcd4;
 
-
-$color-secondary: #00E5FF; // Used for active states and highlights
-$color-secondary-dark: darken($color-secondary, 20%); // Darker shade of secondary for hover states
-
+// State Colors
 $color-error: #d32f2f;
 $color-warning: #fbc02d;
 
-//Navbar variables
+// Typography
+// Font Family
+$font-family-primary: "Noto Kufi Arabic", sans-serif;
+
+// Font Sizes
+$font-size-base: 1rem;  // 16px
+$font-size-xs: 0.85rem; // 13.6px
+$font-size-sm: 0.9rem;  // 14.4px
+$font-size-md: 1.1rem;  // 17.6px
+$font-size-lg: 1.25rem; // 20px
+$font-size-xl: 1.5rem;  // 24px
+$font-size-2xl: 1.75rem; // 28px
+$font-size-3xl: 2rem;    // 32px
+
+// Font Weights
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Line Heights
+$line-height-base: 1.5;
+$line-height-tight: 1.25;
+$line-height-relaxed: 1.75;
+
+// Spacing
+$spacing-xs: 0.5rem;   // 8px
+$spacing-sm: 1rem;     // 16px
+$spacing-md: 1.5rem;   // 24px
+$spacing-lg: 2rem;     // 32px
+$spacing-xl: 2.5rem;   // 40px
+
+// Border Radius
+$border-radius-sm: 0.5rem;    // 8px
+$border-radius-md: 1rem;      // 16px
+$border-radius-lg: 1.5rem;    // 24px
+$border-radius-pill: 50px;
+$border-radius-circle: 50%;
+
+// Component-specific variables
+// Navbar
 $navbar-link-color: $color-white;
 
-//Button Variables
+// Buttons
 $gradient-btn-primary: linear-gradient(to bottom, $color-accent-blue-gradient-start, $color-accent-blue-gradient-end);
 $gradient-btn-secondary: linear-gradient(to bottom, $color-accent-purple, $color-secondary);
 $gradient-btn-hover: linear-gradient(to right, $color-primary-dark, $color-accent-blue-dark);
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Z-index
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;

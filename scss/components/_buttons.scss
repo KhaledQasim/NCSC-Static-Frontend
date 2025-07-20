@@ -4,19 +4,19 @@
   background-color: $color-white;
   width: 35px;
   height: 35px;
-  border-radius: 50%;
-  font-size: 13px;
-  font-weight: bold;
+  border-radius: $border-radius-circle;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
   justify-content: center;
-  margin-right: 14px;
+  margin-right: $spacing-sm;
 
   &:hover {
-    background-color: darken($color-white, 15%); // Changed from color.scale
+    background-color: darken($color-white, 15%);
   }
 }
 
 .btn-bg-black {
-  border-radius: 50px;
+  border-radius: $border-radius-pill;
   width: 50%;
   background-color: $color-black;
   color: $color-white;
@@ -27,9 +27,9 @@
   background: $gradient-btn-primary;
   border: none;
   color: $color-white;
-  border-radius: 50px;
+  border-radius: $border-radius-pill;
   display: flex;
-  gap: 10px;
+  gap: $spacing-xs;
   flex-wrap: wrap;
   width: max-content;
   align-items: center;
@@ -48,29 +48,26 @@
   );
   border: 1px solid $color-white;
   color: $color-white;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 33px;
+  font-weight: $font-weight-bold;
+  padding: $spacing-xs $spacing-md;
+  border-radius: $border-radius-pill;
   width: 300px;
 }
 
 .btn-custom {
-  background-color: darken(
-    adjust-hue($color-primary, 3.8deg),
-    19.4%
-  ); // Changed from color.adjust
+  background-color: darken(adjust-hue($color-primary, 3.8deg), 19.4%);
   color: $color-white;
-  padding: 0.5rem 1.2rem;
-  border-radius: 20px;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $border-radius-md;
 }
 
 .newsletter-buttons {
   .btn {
-    margin: 10px;
-    padding: 12px 30px;
-    font-weight: bold;
-    border-radius: 10px;
-    font-size: 16px;
+    margin: $spacing-xs;
+    padding: $spacing-sm $spacing-lg;
+    font-weight: $font-weight-bold;
+    border-radius: $border-radius-sm;
+    font-size: $font-size-base;
   }
 
   .btn-light {
@@ -78,25 +75,22 @@
   }
 
   .tab-right {
-    border-radius: 0px 100px 100px 0px !important;
+    border-radius: 0 $border-radius-pill $border-radius-pill 0 !important;
   }
   .tab-left {
-    border-radius: 100px 0px 0px 100px !important;
+    border-radius: $border-radius-pill 0 0 $border-radius-pill !important;
   }
 }
 
 .read-more {
   display: flex;
   align-items: center;
-  background-color: darken(
-    adjust-hue($color-primary, -4.3deg),
-    10%
-  ); // Changed from color.adjust
+  background-color: darken(adjust-hue($color-primary, -4.3deg), 10%);
   color: $color-white;
-  padding: 10px 20px;
-  border-radius: 25px;
+  padding: $spacing-xs $spacing-md;
+  border-radius: $border-radius-pill;
   text-decoration: none;
-  font-size: 16px;
+  font-size: $font-size-base;
   transition: background-color 0.3s;
   width: fit-content;
 
@@ -106,34 +100,31 @@
 
   &:hover {
     color: $color-white;
-    background-color: darken(
-      adjust-hue($color-primary, -2.8deg),
-      18%
-    ); // Changed from color.adjust
+    background-color: darken(adjust-hue($color-primary, -2.8deg), 18%);
   }
 
   svg {
-    margin-left: 8px;
+    margin-left: $spacing-xs;
   }
 }
 
 .white-back-test-1 {
-  background: #fff;
+  background: $color-white;
 }
 
 /// sitecore header code
 #header-contactUs-button {
-  color: #fff;
+  color: $color-white;
   @extend .btn-gradient2;
 }
 
 // remove promo white border from contact us header btn
 .promo {
-  padding: 0px !important;
+  padding: 0 !important;
   overflow: visible !important;
   box-sizing: inherit !important;
   .component-content {
-    border-width: 0px !important;
+    border-width: 0 !important;
     border-style: none !important;
     border-color: transparent !important;
   }
@@ -149,14 +140,13 @@
 
 // fix heading langauge link component
 .my-link-fix {
-  
   a {
-   @extend .btn-bg-white;
-   border-bottom: 0px !important;
-   color: $color-black;
-   &:hover{
+    @extend .btn-bg-white;
+    border-bottom: 0 !important;
     color: $color-black;
-   }
+    &:hover {
+      color: $color-black;
+    }
   }
 }
 

@@ -2,75 +2,80 @@
 
 .form-box {
   background-color: rgba($color-white, 0.19);
-  padding: 30px;
-  border-radius: 15px;
+  padding: $spacing-lg;
+  border-radius: $border-radius-md;
   backdrop-filter: blur(5px);
   text-align: center;
+  position: relative;
+  z-index: $z-index-dropdown;
 
   p {
-    font-size: 14px;
+    font-size: $font-size-xs;
   }
 }
 
 .form-control {
   background-color: rgba($base-dark-gray, 0.3);
-  border: 1px solid darken($color-white, 40.8%); // Changed from color.scale
+  border: 1px solid darken($color-white, 40.8%);
   color: $color-white;
   width: 47%;
   display: inline-block;
-  border-radius: 50px;
-  font-size: 13px;
+  border-radius: $border-radius-pill;
+  font-size: $font-size-xs;
   text-align: right;
+  position: relative;
+  z-index: $z-index-dropdown;
 
   &::placeholder {
-    color: darken($color-white, 33.3%); // Changed from color.scale
+    color: darken($color-white, 33.3%);
   }
 }
 
 .nav-tabs {
+  gap: $spacing-xs;
+  border: none;
+  position: relative;
+  z-index: $z-index-dropdown;
 
-    gap: 4px;
-    border: none;
+  .nav-link {
+    background-color: lighten($color-black, 20%);
+    color: $color-white;
+    width: 100%;
+    border: 1px solid;
+  }
 
-    .nav-link {
-        background-color: lighten($color-black, 20%); // Changed from color.scale
-        color: $color-white;
-        width: 100%;
-        border: 1px solid;
-    }
+  .nav-item {
+    width: 47%;
+  }
 
-    .nav-item {
-        width: 47%;
-    }
+  .tab-right {
+    border-radius: 0 $border-radius-pill $border-radius-pill 0 !important;
+  }
 
-    .tab-right {
-        border-radius: 0px 100px 100px 0px !important;
-    }
+  .tab-left {
+    border-radius: $border-radius-pill 0 0 $border-radius-pill !important;
+  }
 
-    .tab-left {
-        border-radius: 100px 0px 0px 100px !important;
-    }
-
-    .nav-link.active {
-        background: linear-gradient(to bottom, $color-accent-purple, $color-secondary);
-        color: $color-white;
-    }
+  .nav-link.active {
+    background: linear-gradient(to bottom, $color-accent-purple, $color-secondary);
+    color: $color-white;
+  }
 }
 
 .icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 26px;
-  margin-bottom: 16px;
+  gap: $spacing-md;
+  margin-bottom: $spacing-sm;
 }
 
 .icon {
   opacity: 0.5;
-  padding: 0px 26px;
+  padding: 0 $spacing-md;
 
   &.borderLeft {
-    border-left: 1px solid lighten(adjust-hue($color-primary, -7.1deg), 5.3%); // Changed from color.adjust
+    border-left: 1px solid lighten(adjust-hue($color-primary, -7.1deg), 5.3%);
   }
 
   img {

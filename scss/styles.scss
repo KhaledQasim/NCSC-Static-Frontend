@@ -6,37 +6,29 @@
 @forward 'components/';
 
 html {
-  // font-size: large;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   height: auto !important;
-
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: $font-family-primary;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: $font-weight-normal;
   font-style: normal;
-
-  // we are directly adding the dir=auto in html tag so no need for below option
-  // direction: rtl;
 }
 
 body {
-  // @include opensans-font-stack();
-  font-family: "Noto Kufi Arabic", sans-serif;
+  font-family: $font-family-primary;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: $font-weight-normal;
   font-style: normal;
-
   position: relative;
   overflow: auto;
-
-  font-size: 16px;
-  line-height: 1.5;
-
+  font-size: $font-size-base;
+  line-height: $line-height-base;
   background: $color-white;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   height: auto !important;
+  
   &.on-page-editor {
     background: $color-white !important;
   }
@@ -45,7 +37,7 @@ body {
 a {
   color: $color-white;
   cursor: pointer;
-  font-size: 0.85em;
+  font-size: $font-size-xs;
   &:hover {
     color: $color-primary;
   }
@@ -56,31 +48,31 @@ h2,
 h3,
 h4,
 h6 {
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: $font-size-3xl;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: $font-size-xl;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: $font-size-2xl;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: $font-size-xl;
 }
 
 h5 {
-  font-size: 1.25em;
+  font-size: $font-size-lg;
 }
 
 h6 {
-  font-size: 1em;
+  font-size: $font-size-base;
 }
 
 
@@ -101,6 +93,13 @@ h6 {
 
 //End navigation bar fix
 
+//Tool Box Direction Fix
+#sxa-toolbox{
+  direction: ltr;
+}
+//End Tool Box Direction Fix
+
+
 #header {
   padding: 8px 0;
   background-color: $color-black;
@@ -112,14 +111,14 @@ h6 {
 
 .section-title {
   text-align: right;
-  margin-bottom: 2rem;
+  margin-bottom: $spacing-lg;
 
   h5 {
-    color: #999;
+    color: darken($color-white, 40%);
   }
 
   h3 {
-    font-weight: bold;
+    font-weight: $font-weight-bold;
     color: $color-accent-blue;
   }
 }

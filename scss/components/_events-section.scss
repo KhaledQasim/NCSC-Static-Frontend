@@ -77,7 +77,7 @@
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: $breakpoint-xl) {
   .events-section .col-md-4,
   .events-section .col-md-8 {
     flex: 0 0 auto;

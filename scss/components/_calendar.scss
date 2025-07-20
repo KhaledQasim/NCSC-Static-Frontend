@@ -2,19 +2,19 @@
 
 // Calendar Box Styling
 .calendar-box {
-  background: linear-gradient(to bottom, #034ea2, #00bcd4);
-  color: #fff;
-  border-radius: 20px;
-  padding: 20px;
-  margin-bottom: 15px;
+  background: linear-gradient(to bottom, $color-accent-blue-gradient-start, $color-accent-blue-gradient-end);
+  color: $color-white;
+  border-radius: $border-radius-lg;
+  padding: $spacing-md;
+  margin-bottom: $spacing-sm;
 }
 
 // Calendar Container Styling (if used elsewhere)
 .calendar-container {
-  background: linear-gradient(to right, #007bff, #00c4cc);
-  color: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
+  background: linear-gradient(to right, $color-primary, $color-accent-blue);
+  color: $color-white;
+  padding: $spacing-md;
+  border-radius: $border-radius-sm;
 }
 
 // Datepicker General Styling
@@ -23,16 +23,16 @@
 }
 
 .datepicker {
-  background-color: transparent; // Keeps the datepicker background transparent
+  background-color: transparent;
 
   table {
-    margin: 0 auto; // Centers the datepicker table
+    margin: 0 auto;
 
     tr {
       td,
       th {
-        width: 50px; // Consolidated to 50px, overriding the earlier 36px
-        height: 50px; // Consolidated to 50px, overriding the earlier 36px
+        width: 50px;
+        height: 50px;
         text-align: center;
       }
 
@@ -40,33 +40,32 @@
         // Hover and focused states for individual days
         &.day:hover,
         &.focused {
-          background: #00bcd4;
-          color: #fff;
+          background: $color-accent-blue;
+          color: $color-white;
         }
 
         // Active/Selected day state
         &.active,
         &.active:hover {
-          background-color: #000;
-          color: #fff;
+          background-color: $color-black;
+          color: $color-white;
         }
 
         // Days from previous/next month (dimmed)
         &.new,
         &.old {
-          color: #bfbfbf;
+          color: darken($color-white, 25%);
         }
 
         // Styles for month/year view items (e.g., "Jan", "Feb", "2024")
         span {
           display: block;
-          width: 47%; // Specific width for these span elements
-          // line-height can be added here if needed for vertical centering within the cell
+          width: 47%;
 
           &.focused,
           &:hover {
-            background: #0354a5; // Darker blue for hover/focused month/year view
-            color: #fff;
+            background: $color-accent-blue-dark;
+            color: $color-white;
           }
         }
       }
@@ -74,8 +73,8 @@
       th {
         // Specific style for the datepicker switch (month/year display in header)
         &.datepicker-switch {
-          width: 100%; // Ensures it takes full width of the header
-          height: 100%; // Ensures it takes full height of the header
+          width: 100%;
+          height: 100%;
           text-align: center;
         }
       }
@@ -87,6 +86,12 @@
   .next:hover,
   .prev:hover,
   tfoot th:hover {
-    background: #0354a5; // Darker blue for navigation element hovers
+    background: $color-accent-blue-dark;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .datepicker-inline {
+    width: 100%;
   }
 }

@@ -1,29 +1,30 @@
 @use '../variables' as *; 
 
 .newsletter-section {
-  background: url(../images/footer.png) no-repeat center center darken(adjust-hue($color-primary, 7.5deg), 20%);  background-size: cover;
+  background: url(../images/footer.png) no-repeat center center darken(adjust-hue($color-primary, 7.5deg), 20%);
+  background-size: cover;
   position: relative;
-  padding: 60px 15px 0;
+  padding: $spacing-xl $spacing-sm 0;
 
   .social-icons i {
-    font-size: 20px;
-    margin: 0 8px;
+    font-size: $font-size-lg;
+    margin: 0 $spacing-xs;
     color: $color-white;
     transition: 0.3s;
 
     &:hover {
-      color: #ccc;
+      color: darken($color-white, 20%);
     }
   }
 }
 
 .newsletter-content {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: $spacing-xl;
 
   h2 {
-    font-weight: bold;
-    margin-bottom: 15px;
+    font-weight: $font-weight-bold;
+    margin-bottom: $spacing-sm;
   }
 }
 
@@ -33,8 +34,8 @@
     padding: 0;
 
     li {
-      margin-bottom: 8px;
-      font-size: 14px;
+      margin-bottom: $spacing-xs;
+      font-size: $font-size-xs;
 
       a {
         color: $color-white;
@@ -46,17 +47,17 @@
 
 .footer-bottom {
   text-align: center;
-  font-size: 14px;
-  margin-top: 30px;
-  padding-bottom: 20px;
+  font-size: $font-size-xs;
+  margin-top: $spacing-lg;
+  padding-bottom: $spacing-md;
 }
 
 .footer-input {
-  margin-top: 15px;
+  margin-top: $spacing-sm;
 
   input {
-    border-radius: 20px;
-    padding: 6px 12px;
+    border-radius: $border-radius-lg;
+    padding: $spacing-xs $spacing-sm;
     border: 1px solid $color-white;
     outline: none;
     background-color: rgba(lighten($color-black, 13.3%), 0.3);

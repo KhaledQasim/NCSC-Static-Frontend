@@ -1,25 +1,24 @@
 @use '../variables' as *; 
 
-
 .survey-section {
   background-color: darken(adjust-hue($color-primary, 6.7deg), 22.9%);
   color: $color-white;
-  padding: 2rem 1rem;
+  padding: $spacing-lg $spacing-sm;
 }
 
 .survey-question {
-  margin-bottom: 2rem;
+  margin-bottom: $spacing-lg;
 }
 
 .progress {
   height: 20px;
   background-color: darken($color-white, 6.7%);
-  margin-bottom: 0.5rem;
-  border-radius: 30px;
+  margin-bottom: $spacing-xs;
+  border-radius: $border-radius-pill;
 }
 
 .progress-bar {
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 
 .option-container {
@@ -34,7 +33,7 @@
   width: 60%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $breakpoint-md) {
   .survey-question .d-flex {
     flex-direction: column;
   }
