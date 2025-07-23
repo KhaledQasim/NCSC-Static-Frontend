@@ -689,6 +689,13 @@
   object-fit: cover;
   border-radius: 0.5rem;
 }
+.social-post i {
+  background: linear-gradient(to bottom, #a20afa, #1d8ec7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
 
 .social-caption {
   margin-top: 0.5rem;
