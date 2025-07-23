@@ -1,14 +1,26 @@
 @use '../variables' as *; 
 
+
+
 .social-icons {
-  i {
+  i{
     font-size: $font-size-xl;
     color: darken($color-white, 60%);
     margin: 0 $spacing-xs;
-    transition: 0.3s;
+   
+
+   
 
     &:hover {
-      color: $color-primary;
+      // fontawseom icons are text so to apply a gradient we need the below code
+      background: $social-icons-gradient;
+      
+      background-clip: text;
+      -webkit-background-clip: text;
+    
+      // need to make it transparent so that the background color takes effect 
+      color: transparent;
+      -webkit-text-fill-color: transparent;
     }
   }
 
@@ -61,6 +73,10 @@
     font-size: $font-size-xl;
   }
 }
+
+
+
+
 
 @media (max-width: $breakpoint-sm) {
   .social-icons i {

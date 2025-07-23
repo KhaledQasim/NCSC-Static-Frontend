@@ -22,6 +22,16 @@ $color-accent-blue-gradient-end: #00ACBD;
 $color-accent-purple-gradient-start: #7f00ff;
 $color-accent-purple-gradient-end: #00bcd4;
 
+// Custom Calendar Gradient Colors
+$color-accent-blue-gradient-start-cc: #004bad;
+$color-accent-blue-gradient-end-cc: #00a9bd;
+$custom-calendar-gradient: linear-gradient(to bottom, $color-accent-blue-gradient-start-cc, $color-accent-blue-gradient-end-cc);
+
+//Social Icons Gradient
+$color-social-icon-start: #a20afa;
+$color-social-icon-end: #1d8ec7;
+$social-icons-gradient: linear-gradient(to bottom, $color-social-icon-start, $color-social-icon-end);
+
 // State Colors
 $color-error: #d32f2f;
 $color-warning: #fbc02d;

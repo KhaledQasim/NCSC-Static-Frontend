@@ -153,6 +153,9 @@
 .datepicker table {
   margin: 0 auto;
 }
+.datepicker table tbody {
+  border-top: 1px solid #fff;
+}
 .datepicker table tr td,
 .datepicker table tr th {
   width: 50px;
@@ -177,6 +180,14 @@
 .datepicker table tr td span.focused, .datepicker table tr td span:hover {
   background: rgb(2.9430051813, 125.0777202073, 139.0569948187);
   color: #fff;
+}
+.datepicker table tr td:first-child {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.datepicker table tr td:last-child {
+  padding-right: 16px;
+  padding-left: 16px;
 }
 .datepicker table tr th.datepicker-switch {
   width: 100%;
@@ -340,7 +351,7 @@
   background: #0354a5;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .datepicker-inline {
     width: 100%;
   }
@@ -405,7 +416,7 @@
   padding: 1rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .events-section .col-md-4,
   .events-section .col-md-8 {
     flex: 0 0 auto;
@@ -653,10 +664,13 @@
   font-size: 1.5rem;
   color: #666666;
   margin: 0 0.5rem;
-  transition: 0.3s;
 }
 .social-icons i:hover {
-  color: #007bff;
+  background: linear-gradient(to bottom, #a20afa, #1d8ec7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 .social-icons .active {
   color: rgb(92.39925, 124.0613025, 218.70075);
@@ -831,6 +845,10 @@ h6 {
 
 #breadcrumbMenuSubcontrol_context_menu * {
   box-sizing: initial;
+}
+
+#sxa-toolbox {
+  direction: ltr;
 }
 
 #header {
